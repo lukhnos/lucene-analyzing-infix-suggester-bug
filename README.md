@@ -1,6 +1,8 @@
 Lucene AnalyzingInfixSuggester Bug Demo
 =======================================
 
+Reported in [LUCENE-6811](https://issues.apache.org/jira/browse/LUCENE-6811).
+
 Currently `AnalyzingInfixSuggester` always opens an index writer, even if the
 suggester will be used entirely in read-only mode. I was trying to serve
 suggestions out of the same index in a multithreaded setup, but I could only
