@@ -8,7 +8,7 @@ create one suggester per index per process because of this design.
 
 I've created this GitHub project to demonstrate the bug.
 
-To run, simple run:
+To run the demo:
 
     ./gradlew build
     java -jar build/libs/lucene-analyzing-infix-suggester-bug.jar
